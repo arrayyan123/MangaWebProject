@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\MangaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,10 @@ use Inertia\Inertia;
 */
 
 Route::get('/home', [PostController::class, 'index'])->name('posts.index');
+Route::get('/manga/{id}', [PostController::class,'mangaDetail'])->name('posts.mangaDetail');
+
+
+
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
