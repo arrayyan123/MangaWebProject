@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 function Navbar() {
   let Links =[
-    {name:"HOME",link:"/"},
+    {name:"HOME",link:"/home"},
     {name:"FAVOURITE",link:"/"},
     {name:"LATEST",link:"/"},
     {name:"ABOUT US",link:"/"},
@@ -71,7 +71,7 @@ function Navbar() {
                     </form>
                 </div>
                 <li className="md:ml-8 mr-4 md:my-0 my-7 text-center">
-                    <button className="rounded-full px-5 py-1 bg-blue-700 text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">{Links[0].name}</button>
+                    <a href={Links[0].link}><button className="rounded-full px-5 py-1 bg-blue-700 text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">{Links[0].name}</button></a>
                 </li>
                 {
                   Links.map((Link, index)=>(

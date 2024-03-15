@@ -17,7 +17,7 @@ function MangaDetail({ mangaId }) {
             <Navbar />
         </header>
         <div className='relative'>
-          <div className='bg-slate-400 w-auto h-auto relative '>
+          <div className='bg-gray-400 w-auto h-auto relative '>
             <a href={`/home`}><button type="button" className="text-white z-10 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 absolute top-[150px] left-[90px] mt-4 ml-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Go Back</button></a>
             <img src={manga.image} className='w-full h-[400px] opacity-40 object-cover ' alt="" />
           </div>
