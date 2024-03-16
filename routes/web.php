@@ -23,6 +23,8 @@ Route::get('/manga/{id}', [PostController::class,'mangaDetail'])->name('posts.ma
 Route::get('/upload-fanart', [PostController::class, 'showUploadForm'])->name('upload-fanart.show');
 Route::post('/upload-fanart', [FanartController::class, 'uploadFanart'])->name('upload-fanart.upload');
 Route::get('/fanart-urls', [FanartController::class, 'getFanartUrls']);
+Route::get('/fanart-title', [FanartController::class, 'getFanartTitle']);
+
 
 
 

@@ -1,4 +1,5 @@
 import Alert from '@/Components/Alert/Alert'
+import Footer from '@/Components/Footer/Footer'
 import AutoScrollCarousel from '@/Components/Home/Carousel/AutoScrollCarousel'
 import CoverFirst from '@/Components/Home/CoverFirst'
 import FanartSection from '@/Components/Home/FanartSection'
@@ -7,6 +8,7 @@ import Navbar from '@/Components/Navbar/Navbar'
 import VisitorCounter from '@/Components/VisitorCounter/VisitorCounter'
 import { Head } from '@inertiajs/react'
 import React from 'react'
+
 
 
 function Home() {
@@ -26,6 +28,9 @@ function Home() {
         </section>
         <section>
             <FanartSection></FanartSection>
+        </section>
+        <section>
+            <Footer />
         </section>
     </div>
   )

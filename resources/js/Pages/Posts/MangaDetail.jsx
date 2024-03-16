@@ -1,7 +1,9 @@
+import Footer from '@/Components/Footer/Footer';
 import { MangaList } from '@/Components/Home/Pagination/MangaList';
 import Navbar from '@/Components/Navbar/Navbar';
 import { Head } from '@inertiajs/react';
 import React from 'react';
+
 
 function MangaDetail({ mangaId }) {
     const manga = MangaList.find(item => item.id === mangaId);
@@ -42,10 +44,15 @@ function MangaDetail({ mangaId }) {
                   </div>
               </div>
             </div>
-          </div>
-          
-            
+          </div>  
         </div>
+        <section>
+          
+        </section>
+        <section>
+
+        </section>
+        <Footer />
       </>
     );
 }
