@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+   @font-face {
+        font-family: GeostarFill-Reguler;
+        font-weight: 400;
+        src: url(/public/Fonts/Geostar_Fill/GeostarFill-Regular.ttf );
+    } 
+    @font-face {
+        font-family: GenshinImpact;
+        font-weight: 500;
+        src: url(/public/Fonts/zh-cn\ 2.ttf);
+    }
+}

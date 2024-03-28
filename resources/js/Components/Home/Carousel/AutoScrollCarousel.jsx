@@ -36,10 +36,10 @@ function AutoScrollCarousel() {
     };
 
     return (
-        <div className="w-full">
+        <div>
             <Slider {...settings}>
                 {MangaList.map((manga, index) => (
-                    <div key={index} className="w-full mt-[230px] mx-2 ">
+                    <div key={index} className=" w-full mt-[260px] mx-2">
                         <img src={manga.image} className="w-[460px] h-[280px] object-cover object-top" alt={manga.title} />
                     </div>
                 ))}

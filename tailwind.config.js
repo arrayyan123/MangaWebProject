@@ -15,6 +15,8 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                geostar: ["GeostarFill-Reguler", 'serif'],
+                genshin: ["GenshinImpact", 'serif']
             },
         },
         colors: {

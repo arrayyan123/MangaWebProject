@@ -1,8 +1,10 @@
 import Footer from '@/Components/Footer/Footer';
 import { MangaList } from '@/Components/Home/Pagination/MangaList';
+import MangaChapter from '@/Components/MangaContent/MangaChapter';
 import Navbar from '@/Components/Navbar/Navbar';
 import { Head } from '@inertiajs/react';
 import React from 'react';
+
 
 
 function MangaDetail({ mangaId }) {
@@ -47,10 +49,9 @@ function MangaDetail({ mangaId }) {
           </div>  
         </div>
         <section>
-          
+          <MangaChapter />
         </section>
         <section>
-
         </section>
         <Footer />
       </>

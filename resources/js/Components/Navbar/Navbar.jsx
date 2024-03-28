@@ -36,7 +36,7 @@ function Navbar() {
   return (
     <div className='shadow-md w-[90%] fixed top-0 left-0 md:mx-[65px] my-5 rounded-full mx-[34px] z-50'>
         <div className="md:flex bg-red-400 items-center justify-between py-4 md:px-10 px-7 rounded-full">
-            <div className='font-bold text-2xl cursor-pointer flex items-center font-serif text-gray-800'>
+            <div className='font-bold text-2xl cursor-pointer flex items-center text-gray-800 font-geostar'>
               <span className='text-3xl text-white mr-1 pt-2'>
                 <IonIcon name='logo-ionic'></IonIcon>
               </span>

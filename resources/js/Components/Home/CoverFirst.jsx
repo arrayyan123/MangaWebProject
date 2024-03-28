@@ -56,21 +56,23 @@ function CoverFirst() {
   return (
     <div className="relative">
         <div className='manga-section flex flex-row z-10 w-[1035px] items-center justify-center m-auto py-[140px] gap-9'>
-            <div>
-                <img src={GenshinCover} className='w-[1300px] h-auto rounded-xl' />
-            </div>
-            <div className='flex flex-col gap-10'>
-                <h1 className='text-[50px]'>GENSHIN IMPACT</h1>    
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda sunt laudantium accusantium minima excepturi, sit aspernatur, mollitia dicta aperiam maxime explicabo hic dolore dolorem vero. Debitis illum dolore nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem veniam eligendi veritatis esse autem nulla sed ad corporis, laboriosam voluptas laborum commodi? Ut, fugiat! Voluptas quia tempore debitis aperiam aspernatur.</p>
-                
-                <div className='genre-button flex flex-row gap-4'>
-                {
-                    Genre.map((item, index)=>(
-                        <a href=""><button key={index} className={`px-4 py-2 text-white rounded-lg ${item.color}`}>{item.genre}</button></a>
-                    ))
-                }
-                </div>
-            </div>
+            <Slide direction="right">
+              <div>
+                  <img src={GenshinCover} className='w-[1300px] h-auto rounded-xl' />
+              </div>
+              <div className='flex flex-col gap-10'>
+                  <h1 className='text-[50px] font-genshin'>GENSHIN IMPACT</h1>    
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda sunt laudantium accusantium minima excepturi, sit aspernatur, mollitia dicta aperiam maxime explicabo hic dolore dolorem vero. Debitis illum dolore nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem veniam eligendi veritatis esse autem nulla sed ad corporis, laboriosam voluptas laborum commodi? Ut, fugiat! Voluptas quia tempore debitis aperiam aspernatur.</p>
+                  
+                  <div className='genre-button flex flex-row gap-4'>
+                  {
+                      Genre.map((item, index)=>(
+                          <a href=""><button key={index} className={`px-4 py-2 text-white rounded-lg ${item.color}`}>{item.genre}</button></a>
+                      ))
+                  }
+                  </div>
+              </div>
+            </Slide>
             <div className='relative'>
                 <div className="flex flex-col items-center justify-center z-10 absolute top-[120px] gap-4 left-0 right-0">
                     {

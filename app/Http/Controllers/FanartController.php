@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Log;
+use Intervention\Image\Image;
 
 class FanartController extends Controller
 {
@@ -12,7 +13,7 @@ class FanartController extends Controller
     {
         try {
             $request->validate([
-                'image' => 'required|image|max:1000000',
+                'image' => 'required|image|max:100000000|mimes:jpeg,png,jpg',
                 'altText' => 'string',
                 'title' => 'string',
             ]);
